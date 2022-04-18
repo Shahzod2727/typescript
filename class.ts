@@ -8,8 +8,21 @@ class Shape implements IShape {
   x: number;
   y: number;
 
+  constructor(x?: number, y?: number) {
+    this.x = x;
+    this.y = y;
+  }
+
   draw() {
     console.log(this.x.toString());
     console.log(this.y.toString());
+    console.log("Constructor");
   }
 }
+
+let shape = new Shape(10,20);
+
+shape.draw();
+
+
+
